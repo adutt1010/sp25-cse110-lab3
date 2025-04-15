@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Pomodoro Brainstorm - Meeting Minutes</title>
+  <meta name="description" content="Meeting minutes for the initial Pomodoro brainstorming session." />
+  <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
@@ -10,44 +12,136 @@
     <h1>Pomodoro Brainstorm</h1>
     <h2>Topic: Initial Ideas</h2>
     <h3>April 14, 2025</h3>
+    <nav>
+      <p><a href="#agenda">Jump to Agenda</a> | <a href="#form">Feedback Form</a></p>
+    </nav>
   </header>
 
-  <section>
-    <h2>Attendance</h2>
-    <ul>
-      <li>Aditya Dutt</li>
-      <li>Thomas Powell</li>
-    </ul>
-  </section>
+  <main>
+    <section id="attendance">
+      <h2>Attendance</h2>
+      <ul>
+        <li>Aditya Dutt</li>
+        <li>Thomas Powell</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Agenda</h2>
-    <ul>
-      <li>Discuss core features</li>
-    </ul>
-  </section>
+    <section id="agenda">
+      <h2>Agenda</h2>
+      <ol>
+        <li>Discuss core features</li>
+        <li>Outline first prototype</li>
+      </ol>
+    </section>
 
-  <section>
-    <h2>Unfinished Business</h2>
-    <ul>
-      <li>Decide on tech stack</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Unfinished Business</h2>
+      <ul>
+        <li>Decide on tech stack</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>New Business</h2>
-    <ul>
-      <li>Brainstorm timer flow</li>
-    </ul>
-  </section>
+    <section>
+      <h2>New Business</h2>
+      <ul>
+        <li>Brainstorm timer flow</li>
+      </ul>
+    </section>
 
-  <section>
-    <h2>Comments</h2>
-    <ul>
-      <li>Add break alerts</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Comments</h2>
+      <ul>
+        <li><b>Add break alerts</b> (for productivity)</li>
+        <li><i>Discuss mobile support</i></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Diagram</h2>
+      <figure>
+        <img src="screenshots/pomodoro.png" alt="Pomodoro timer sketch" width="400">
+        <figcaption><em>Whiteboard sketch of timer layout</em></figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Meeting Media</h2>
+
+      <h3>Audio Recording</h3>
+      <audio controls>
+        <source src="screenshots/audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h3>Video Recording</h3>
+      <video width="400" controls>
+        <source src="screenshots/scenery.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <section>
+      <h2>Fun Expansion</h2>
+      <details>
+        <summary>Click to reveal a fun fact</summary>
+        <p><strong>Pomodoro</strong> means tomato in italian</p>
+      </details>
+    </section>
+
+    <hr>
+
+    <section id="form">
+      <h2>Feedback Form</h2>
+      <form>
+        <fieldset>
+          <legend>Your Thoughts</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
+
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date"><br><br>
+
+          <label for="thoughts">Share your thoughts:</label><br>
+          <textarea id="thoughts" name="thoughts" rows="4" cols="30"></textarea><br><br>
+
+          <label>Which feature do you like best?</label><br>
+          <input type="radio" id="timer" name="feature" value="timer">
+          <label for="timer">Timer</label><br>
+          <input type="radio" id="alerts" name="feature" value="alerts">
+          <label for="alerts">Break Alerts</label><br><br>
+
+          <label>Would you use this app?</label><br>
+          <input type="checkbox" id="yes" name="use" value="yes">
+          <label for="yes">Yes</label><br>
+          <input type="checkbox" id="maybe" name="use" value="maybe">
+          <label for="maybe">Maybe</label><br><br>
+
+          <label for="role">Choose your role:</label>
+          <select id="role" name="role">
+            <option value="student">Student</option>
+            <option value="developer">Developer</option>
+            <option value="other">Other</option>
+          </select><br><br>
+
+          <label for="tech">Favorite Tech:</label>
+          <input list="tech-list" id="tech" name="tech">
+          <datalist id="tech-list">
+            <option value="HTML">
+            <option value="JavaScript">
+            <option value="Python">
+          </datalist><br><br>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><small>Meeting minutes by Aditya Dutt — <span>All rights reserved.</span><br>
+    Contact us at <a href="mailto:aditya@example.com">aditya@example.com</a></small></p>
+  </footer>
 
 </body>
 </html>
-
