@@ -1,0 +1,145 @@
+/* General comment */
+:root {
+    --main-bg: #f0f0f0;
+    --accent: orange;
+    --accent-fallback: red;
+  }
+  
+  body {
+    background-color: var(--main-bg, white);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Colors */
+  section {
+    background-color: rgba(255, 165, 0, 0.1);
+    color: hsl(0, 0%, 10%);
+  }
+  
+  /* Units */
+  main {
+    padding: 2rem;
+    margin: 20px;
+    width: 80vw;
+    max-width: 1000px;
+    min-width: 300px;
+  }
+  
+  /* Box model - margin, padding, border */
+  figure {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px 15px 10px 15px;
+    border-style: solid;
+    border-color: var(--accent, var(--accent-fallback));
+    border-width: 2px;
+    border-radius: 8px;
+  }
+  
+  /* Text */
+  h2 {
+    text-align: center;
+    text-decoration: underline;
+    color: orange;
+  }
+  
+  /* Display */
+  nav {
+    display: inline-block;
+  }
+  section {
+    display: block;
+  }
+  
+  /* Sizing */
+  img {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Position */
+  footer {
+    position: relative;
+  }
+  
+  /* Pseudo-class */
+  button:hover {
+    background-color: #ffa;
+  }
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Flexbox */
+  #agenda {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  /* Grid */
+  #form fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border: 2px solid #ddd;
+  }
+  
+  /* Media query */
+  @media screen and (max-width: 600px) {
+    body {
+      background-color: #e0e0e0;
+    }
+  }
+  
+  /* Selectors */
+  .class-example {
+    color: blue;
+  }
+  #id-example {
+    font-weight: bold;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  input[type="text"] {
+    border: 1px solid #aaa;
+  }
+  p:hover {
+    color: green;
+  }
+  h2, h3 {
+    font-style: italic;
+  }
+  main section {
+    padding: 1rem;
+  }
+  nav > p {
+    font-size: 0.9rem;
+  }
+  section ~ section {
+    border-top: 1px dashed gray;
+  }
+  section + section {
+    margin-top: 1.5rem;
+  }
+  h1.header-title {
+    font-size: 2rem;
+  }
+  
+  /* New selectors */
+  form:has(textarea) {
+    background-color: #fefefe;
+  }
+  
+  /* Nested selectors */
+  @scope (main) {
+    section {
+      border-left: 4px solid #ccc;
+    }
+  }
+  
