@@ -10,13 +10,11 @@
     font-family: 'Segoe UI', sans-serif;
   }
   
-  /* Colors */
   section {
     background-color: rgba(255, 165, 0, 0.1);
     color: hsl(0, 0%, 10%);
   }
   
-  /* Units */
   main {
     padding: 2rem;
     margin: 20px;
@@ -38,14 +36,12 @@
     border-radius: 8px;
   }
   
-  /* Text */
   h2 {
     text-align: center;
     text-decoration: underline;
     color: orange;
   }
   
-  /* Display */
   nav {
     display: inline-block;
   }
@@ -53,18 +49,15 @@
     display: block;
   }
   
-  /* Sizing */
   img {
     width: 100%;
     max-width: 400px;
   }
   
-  /* Position */
   footer {
     position: relative;
   }
   
-  /* Pseudo-class */
   button:hover {
     background-color: #ffa;
   }
@@ -72,7 +65,6 @@
     transform: scale(0.98);
   }
   
-  /* Flexbox */
   #agenda {
     display: flex;
     flex-direction: column;
@@ -81,7 +73,6 @@
     align-items: flex-start;
   }
   
-  /* Grid */
   #form fieldset {
     display: grid;
     grid-template-columns: 1fr;
@@ -89,7 +80,6 @@
     border: 2px solid #ddd;
   }
   
-  /* Media query */
   @media screen and (max-width: 600px) {
     body {
       background-color: #e0e0e0;
@@ -131,12 +121,10 @@
     font-size: 2rem;
   }
   
-  /* New selectors */
   form:has(textarea) {
     background-color: #fefefe;
   }
   
-  /* Nested selectors */
   @scope (main) {
     section {
       border-left: 4px solid #ccc;
